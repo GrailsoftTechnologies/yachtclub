@@ -1,0 +1,39 @@
+/* Standard Navigation Bar Styling */
+.NavigationBar {
+	height: 100%;
+	font-family: "Raleway";
+	font-size: 3vh;
+	min-height: 14vh;
+}
+
+#logo {
+	height: 10vh;
+
+	margin-top: 1vh;
+  margin-right: 2vw;
+  margin-left: 2vw;
+  margin-bottom: 1vh;
+}
+
+/* Bootstrap overrides */
+.NavigationBar .nav-link {
+	color: inherit!important;
+	border-bottom: 1px transparent solid;
+}
+
+.NavigationBar .navbar {
+	padding-top: 1vh;
+	padding-bottom: 1vh;
+}
+
+.NavigationBar .navbar-brand {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-bottom: 1px transparent solid;
+}
+
+.NavigationBar .dropdown-item {
+	color: inherit!important;
+	background-color: inherit!important;
+	text-align: center;
+}
