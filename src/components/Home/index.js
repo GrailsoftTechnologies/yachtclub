@@ -1,6 +1,8 @@
 import React from 'react';
 import { Container, Col, Row } from 'reactstrap';
 
+import CarouselFrame from '../CarouselFrame';
+
 
 export default function Home (props) {
   return (
@@ -18,6 +20,9 @@ export default function Home (props) {
           <h4>$1 off French Fries</h4>
           <h4>$4 Eat Your Greens Salad</h4>
         </Col>
+      </Row>
+      <Row>
+        <CarouselFrame/>
       </Row>
     </Container>
   );

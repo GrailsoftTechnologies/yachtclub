@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import {
   Carousel,
   CarouselItem,
-  CarouselControl,
   CarouselIndicators,
   CarouselCaption,
   Container,
@@ -11,10 +10,10 @@ import {
 } from 'reactstrap';
 import './styles.css';
 
-import pic1 from '../../img/home1.jpg';
-import pic2 from '../../img/home2.jpg';
-import pic3 from '../../img/home3r.jpg';
-import pic4 from '../../img/home4r.jpg';
+import pic1 from '../../img/barart.jpg';
+import pic2 from '../../img/barseating.jpg';
+import pic3 from '../../img/bar.jpg';
+import pic4 from '../../img/barinterior.jpg';
 
 
 const items = [
@@ -90,27 +89,7 @@ class CarouselFrame extends Component {
           onExited={this.onExited}
           key={item.src}
         >
-          <Container>
-            <Row>
-              <Col lg="0" xl="1"></Col>
-              <Col lg="3" xl="3" id="desktopTitle">
-                <h1>NASHVILLE</h1>
-                <h1>CLASSICAL</h1>
-                <h1>BALLET</h1>
-                <h1>ACADEMY</h1>
-              </Col>
-              <Col lg="9" xl="7">
-                <div id="mobileTitle">
-                  <h1>NASHVILLE</h1>
-                  <h1>CLASSICAL</h1>
-                  <h1>BALLET</h1>
-                  <h1>ACADEMY</h1>
-                </div>
-                <img src={item.src} alt={item.altText} id="carouselImage"/>
-              </Col>
-              <Col leg="0" xl="1"></Col>
-            </Row>
-          </Container>
+          <img src={item.src} alt={item.altText} id="carouselImage"/>
           <CarouselCaption captionText={item.altText} captionHeader={item.caption} className={item.className}/>
         </CarouselItem>
       );
