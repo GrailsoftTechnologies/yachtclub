@@ -21,13 +21,11 @@ const items = [
     src: pic1,
     altText: '',
     caption: '',
-		className: 'specialClass'
   },
   {
     src: pic2,
     altText: '',
     caption: '',
-		className: 'specialClass'
   },
   {
     src: pic3,
@@ -96,12 +94,13 @@ class CarouselFrame extends Component {
     });
 
     return (
-      <div>
+      <div className="CarouselFrame">
 					<Carousel
 	        activeIndex={activeIndex}
 	        next={this.next}
 	        previous={this.previous}
 					className="carouselBackground"
+          interval={3000}
 	      >
 	        <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
 	        {slides}
