@@ -20,6 +20,7 @@ class Reviews extends Component {
 			.then(res => res.json())
 			.then(
 				async (result) => {
+					console.log(result.posts)
 					this.mapContentToState(result.posts);
 				},
 				(error) => {
