@@ -1,0 +1,26 @@
+.Reviews {
+	margin-top: 32px;
+}
+
+.Reviews a{
+	margin-left: 0px !important;
+	margin-right: 0px !important;
+}
+
+@media (max-width: 575.98px) {
+	.Reviews .display-4{
+		font-size: 7vw;
+	}
+
+	.Reviews .display-3{
+		font-size: 8vw;
+	}
+
+	.Reviews img{
+		max-width: 80vw;
+	}
+
+	.Reviews iframe{
+		max-width: 80vw;
+	}
+}
