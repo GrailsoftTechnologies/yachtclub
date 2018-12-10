@@ -26,7 +26,7 @@ class ParallaxPage extends Component {
         <div className="textbox">
           <Home/>
         </div>
-        <div className="bgimg3" backgroundColor="rgb(0, 0, 0)" id="Menu">
+        <div className="bgimg3" id="Menu">
           <div className="captionline">
             <span className="captionbox">Menu</span>
           </div>
@@ -42,7 +42,7 @@ class ParallaxPage extends Component {
         <div className="textbox">
           <About/>
         </div>
-        <div className="bgimg4" backgroundColor="rgb(270, 270, 270)" id="Contact">
+        <div className="bgimg4" id="Contact">
           <div className="captionline">
             <span className="captionbox">Contact</span>
           </div>

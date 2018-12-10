@@ -7,6 +7,10 @@
 	margin-right: 0px !important;
 }
 
+.Reviews img {
+	width: 100%; 
+}
+
 @media (max-width: 575.98px) {
 	.Reviews .display-4{
 		font-size: 7vw;
