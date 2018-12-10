@@ -14,21 +14,13 @@ class Reviews extends Component {
 	}
 
 	async fetchContent(mapArray, pageToken){
-		let fetchAddress = "https://www.googleapis.com/blogger/v3/blogs/7025349432715574756/posts/?key="+myAPI.blogger;
-		if(pageToken){
-			fetchAddress += "&pageToken="+pageToken;
-		}
-		fetch(fetchAddress)
+		let fetchAddress = "https://public-api.wordpress.com/rest/v1.1/sites/grailsoft.wordpress.com/posts";
+		let header = {"Authorization" : "Bearer 6VYGoL8E@sQu8dT0!c)VtV4HsPulh(UDC2bE5kYSd5qPh3EX#af%lqMJFyXxQ2jq"}
+		fetch(fetchAddress, {headers: header})
 			.then(res => res.json())
 			.then(
 				async (result) => {
-					mapArray = mapArray.concat(result.items);
-					if (result.nextPageToken){
-						await this.fetchContent(mapArray, result.nextPageToken)
-					}else{
-						console.log(mapArray);
-						this.mapContentToState(mapArray);
-					}
+					console.log(result);
 				},
 				(error) => {
 					console.log("fetch error");

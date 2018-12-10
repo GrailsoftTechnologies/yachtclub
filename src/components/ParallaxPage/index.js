@@ -3,7 +3,7 @@ import './styles.css';
 import Contact from '../Contact';
 import About from '../About';
 import Home from '../Home';
-import Menu from '../Menu';
+import Reviews from '../Reviews';
 
 class ParallaxPage extends Component {
   render(){
@@ -32,7 +32,7 @@ class ParallaxPage extends Component {
           </div>
         </div>
         <div className="textbox">
-          <Menu/>
+          <Reviews/>
         </div>
         <div className="bgimg2" id="About">
           <div className="captionline">
